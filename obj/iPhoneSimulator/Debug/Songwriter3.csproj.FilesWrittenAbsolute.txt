@@ -1,0 +1,17 @@
+/Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/ibtool/LaunchScreen.nib
+/Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/18-view-19.nib
+/Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/Info.plist
+/Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/UINavigationController-6.nib
+/Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
+/Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/actool/partial-info.plist
+/Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/actool/asset-manifest.plist
+/Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/actool/_PartialAppManifest.items
+/Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/actool/_BundleResourceWithLogicalName.items
+/Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/optimized/
+/Users/Hale/Projects/Songwriter3/Songwriter3/bin/iPhoneSimulator/Debug/Songwriter3.exe.mdb
+/Users/Hale/Projects/Songwriter3/Songwriter3/bin/iPhoneSimulator/Debug/Songwriter3.exe
+/Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/Songwriter3.exe
+/Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/Songwriter3.exe.mdb
+/Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/104-view-105.nib
+/Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/IndividualSongLyricPageSBID.nib
