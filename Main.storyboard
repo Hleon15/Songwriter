@@ -58,7 +58,7 @@
                             <outlet property="delegate" destination="18" id="21"/>
                         </connections>
                     </tableView>
-                    <navigationItem title="Title" id="80" key="navigationItem"/>
+                    <navigationItem title="Songsta" id="80" key="navigationItem"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="24" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,6 +113,14 @@
                             <outlet property="dataSource" destination="104" id="106"/>
                             <outlet property="delegate" destination="104" id="107"/>
                         </connections>
+                        <tabBar contentMode="bottom" id="165" key="tableFooterView">
+                            <rect key="frame" x="0.0" y="551" width="600" height="49"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <items>
+                                <tabBarItem systemItem="favorites" id="166"/>
+                                <tabBarItem systemItem="more" id="167"/>
+                            </items>
+                        </tabBar>
                     </tableView>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="110" userLabel="First Responder" sceneMemberID="firstResponder"/>
