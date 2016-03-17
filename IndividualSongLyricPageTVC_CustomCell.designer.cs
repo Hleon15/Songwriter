@@ -22,6 +22,14 @@ namespace Songwriter3
 		[GeneratedCode ("iOS Designer", "1.0")]
 		UITextView LyricsTV { get; set; }
 
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton NoteButton { get; set; }
+
+		[Action ("NoteButton_TouchUpInside:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void NoteButton_TouchUpInside (UIButton sender);
+
 		void ReleaseDesignerOutlets ()
 		{
 			if (LyricNameL != null) {
@@ -31,6 +39,10 @@ namespace Songwriter3
 			if (LyricsTV != null) {
 				LyricsTV.Dispose ();
 				LyricsTV = null;
+			}
+			if (NoteButton != null) {
+				NoteButton.Dispose ();
+				NoteButton = null;
 			}
 		}
 	}

@@ -15,3 +15,12 @@
 /Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/Songwriter3.exe.mdb
 /Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/104-view-105.nib
 /Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/IndividualSongLyricPageSBID.nib
+/Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/178-view-179.nib
+/Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/UIViewController-178.nib
+/Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/IndivdualSongLyricPage_NotePageSBID.nib
+/Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/UITabBarController-361.nib
+/Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/540-view-541.nib
+/Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/1002-view-1005.nib
+/Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/675-view-676.nib
+/Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/AllIdeasPage_NotesPage_SelectedNoteSBID.nib
+/Users/Hale/Projects/Songwriter3/Songwriter3/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/UITableViewController-675.nib

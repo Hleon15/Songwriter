@@ -111,6 +111,24 @@
     <Compile Include="IndividualSongLyricPageTVC_CustomCell.designer.cs">
       <DependentUpon>IndividualSongLyricPageTVC_CustomCell.cs</DependentUpon>
     </Compile>
+    <Compile Include="IndividualSongLyricPage_NotePageVC.cs" />
+    <Compile Include="IndividualSongLyricPage_NotePageVC.designer.cs">
+      <DependentUpon>IndividualSongLyricPage_NotePageVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllIdeasPageTVC.cs" />
+    <Compile Include="AllIdeasPageTVC.designer.cs">
+      <DependentUpon>AllIdeasPageTVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllIdeasPage_NotesPageTVC.cs" />
+    <Compile Include="AllIdeasPage_NotesPageTVC.designer.cs">
+      <DependentUpon>AllIdeasPage_NotesPageTVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllIdeasPage_NotesPage_SelectedNoteVC.cs" />
+    <Compile Include="AllIdeasPage_NotesPage_SelectedNoteVC.designer.cs">
+      <DependentUpon>AllIdeasPage_NotesPage_SelectedNoteVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_AllNotes_.cs" />
+    <Compile Include="AllNotes_IndividualNote.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

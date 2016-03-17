@@ -8,7 +8,7 @@ namespace Songwriter3
 	partial class IndividualSongLyricPageTVC_CustomCell : UITableViewCell
 	{
 		//FIELDS
-		UITableView tableView;
+		UITableViewController tableView;
 		AllSongs_IndividualSong_Lyrics lyrics;
 		//PROPERTIES
 
@@ -24,21 +24,29 @@ namespace Songwriter3
 			LyricsTV.Text = song.SectionLyrics;
 		}
 		//
-		public void SetTableview(UITableView tableView)
+		public void SetTableview(UITableViewController tableView)
 		{
 			if(this.tableView == null)
 			{
 				this.tableView = tableView;
-				LyricsTV.Changed += LyricsTV_Changed;
+				LyricsTV.Changed += LyricsTV_Changed; //.changed menas if text view ever changes, it calls the method on the right of the +=.
 			}
 
 		}
-
+		//
 		void LyricsTV_Changed (object sender, EventArgs e)
 		{
-			lyrics.SectionLyrics = LyricsTV.Text;
-			tableView.BeginUpdates();
-			tableView.EndUpdates();
+			lyrics.SectionLyrics = LyricsTV.Text;//save lyrics into SectionLyrics
+			tableView.TableView.BeginUpdates();
+			tableView.TableView.EndUpdates();
+		}
+
+		partial void NoteButton_TouchUpInside (UIButton sender)
+		{
+			IndividualSongLyricPage_NotePageVC sectionNotes = UIStoryboard.FromName("Main",null).InstantiateViewController("IndivdualSongLyricPage_NotePageSBID") as IndividualSongLyricPage_NotePageVC;
+			sectionNotes.SetSection(lyrics);
+			tableView.NavigationController.ShowViewController(sectionNotes,this);
+
 		}
 	}
 }

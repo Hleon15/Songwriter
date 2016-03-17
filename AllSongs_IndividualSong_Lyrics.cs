@@ -7,6 +7,7 @@ namespace Songwriter3
 		//FIELDS
 		private string sectionName;
 		private string sectionLyrics;
+		private string sectionNotes;
 		//PROPERTIES
 		public string SectionName
 		{
@@ -28,6 +29,17 @@ namespace Songwriter3
 			set
 			{
 				sectionLyrics = value;
+			}
+		}
+		public string SectionNotes
+		{
+			get
+			{
+				return sectionNotes;
+			}
+			set
+			{
+				sectionNotes = value;
 			}
 		}
 		//CONSTRUCTOR

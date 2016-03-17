@@ -72,7 +72,7 @@ namespace Songwriter3
 		{
 			IndividualSongLyricPageTVC_CustomCell cell = tableView.DequeueReusableCell("IndividualSongLyricPageCID") as IndividualSongLyricPageTVC_CustomCell;
 			cell.SetCellElements(selectedSong.LyricSections[indexPath.Row]);
-			cell.SetTableview(TableView);
+			cell.SetTableview(this);
 			return cell;
 		}
 		private void createNewSection(string section)
@@ -83,5 +83,6 @@ namespace Songwriter3
 			selectedSong.LyricSections.Add(lyricSection);
 			TableView.ReloadData();
 		}
+
 	}
 }
