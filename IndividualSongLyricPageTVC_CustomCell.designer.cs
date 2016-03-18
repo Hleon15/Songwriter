@@ -26,9 +26,17 @@ namespace Songwriter3
 		[GeneratedCode ("iOS Designer", "1.0")]
 		UIButton NoteButton { get; set; }
 
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton RecordingButton { get; set; }
+
 		[Action ("NoteButton_TouchUpInside:")]
 		[GeneratedCode ("iOS Designer", "1.0")]
 		partial void NoteButton_TouchUpInside (UIButton sender);
+
+		[Action ("RecordingButton_TouchUpInside:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void RecordingButton_TouchUpInside (UIButton sender);
 
 		void ReleaseDesignerOutlets ()
 		{
@@ -43,6 +51,10 @@ namespace Songwriter3
 			if (NoteButton != null) {
 				NoteButton.Dispose ();
 				NoteButton = null;
+			}
+			if (RecordingButton != null) {
+				RecordingButton.Dispose ();
+				RecordingButton = null;
 			}
 		}
 	}

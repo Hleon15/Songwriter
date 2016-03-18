@@ -48,5 +48,12 @@ namespace Songwriter3
 			tableView.NavigationController.ShowViewController(sectionNotes,this);
 
 		}
-	}
+
+        partial void RecordingButton_TouchUpInside(UIButton sender)
+        {
+            RecordingsTableViewController recordings = UIStoryboard.FromName("Main", null).InstantiateViewController("RecordingsTableViewController") as RecordingsTableViewController;
+            recordings.SetSection(lyrics);
+            tableView.NavigationController.ShowViewController(recordings, this);
+        }
+    }
 }

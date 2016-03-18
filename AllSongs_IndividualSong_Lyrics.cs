@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Songwriter3.Classes;
+using System;
+using System.Collections.Generic;
 
 namespace Songwriter3
 {
@@ -8,6 +10,8 @@ namespace Songwriter3
 		private string sectionName;
 		private string sectionLyrics;
 		private string sectionNotes;
+        private List<Recording> recordings = new List<Recording>();
+
 		//PROPERTIES
 		public string SectionName
 		{
@@ -42,6 +46,13 @@ namespace Songwriter3
 				sectionNotes = value;
 			}
 		}
+        public List<Recording> Recordings
+        {
+            get
+            {
+                return recordings;
+            }
+        }
 		//CONSTRUCTOR
 		public AllSongs_IndividualSong_Lyrics ()
 		{

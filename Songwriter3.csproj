@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -79,7 +79,9 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
@@ -90,8 +92,23 @@
     <None Include="Entitlements.plist" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\AudioPlayer.cs" />
+    <Compile Include="Classes\AudioRecorder.cs" />
+    <Compile Include="Classes\Recording.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="RecordingCustomCell.cs" />
+    <Compile Include="RecordingCustomCell.designer.cs">
+      <DependentUpon>RecordingCustomCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecordingsTableViewController.cs" />
+    <Compile Include="RecordingsTableViewController.designer.cs">
+      <DependentUpon>RecordingsTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecordingViewController.cs" />
+    <Compile Include="RecordingViewController.designer.cs">
+      <DependentUpon>RecordingViewController.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewController.cs" />
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
