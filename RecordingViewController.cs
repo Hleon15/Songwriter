@@ -10,6 +10,7 @@ namespace Songwriter3
 	{
         private AllSongs_IndividualSong_Lyrics _section;
         private AudioRecorder _recorder;
+        private bool justCreatedPage = false;
 
 		public RecordingViewController (IntPtr handle) : base (handle)
 		{
@@ -18,6 +19,24 @@ namespace Songwriter3
         {
             base.ViewDidLoad();
             _recorder = new AudioRecorder(_section.SectionName);
+            justCreatedPage = true;
+        }
+        public override void ViewDidDisappear(bool animated)
+        {
+            base.ViewDidDisappear(animated);
+            _recorder.DeactivateAudioSession();
+        }
+        public override void ViewDidAppear(bool animated)
+        {
+            base.ViewDidAppear(animated);
+            if (justCreatedPage)
+            {
+                justCreatedPage = false;
+            }
+            else
+            {
+                _recorder.ReactivateAudioSession();
+            }
         }
 
         public void SetSection(AllSongs_IndividualSong_Lyrics section)

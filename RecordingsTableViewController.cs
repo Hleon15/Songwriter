@@ -9,7 +9,8 @@ namespace Songwriter3
 	partial class RecordingsTableViewController : UITableViewController
 	{
         private AllSongs_IndividualSong_Lyrics _section;
-
+        private AudioPlayer _audioPlayer;
+        private bool justCreatedPage = false;
         public RecordingsTableViewController (IntPtr handle) : base (handle)
 		{
 		}
@@ -25,15 +26,31 @@ namespace Songwriter3
                 NavigationController.ShowViewController(controller, this);
             })
             , true);
+
+            _audioPlayer = new AudioPlayer();
+            justCreatedPage = true;
         }
-        public void SetSection(AllSongs_IndividualSong_Lyrics section)
+        public override void ViewDidDisappear(bool animated)
         {
-            _section = section;
+            base.ViewDidDisappear(animated);
+            _audioPlayer.DeactivateAudioSession();
         }
         public override void ViewDidAppear(bool animated)
         {
             base.ViewDidAppear(animated);
+            if (justCreatedPage)
+            {
+                justCreatedPage = false;
+            }
+            else
+            {
+                _audioPlayer.ReactivateAudioSession();
+            }
             TableView.ReloadData();
+        }
+        public void SetSection(AllSongs_IndividualSong_Lyrics section)
+        {
+            _section = section;
         }
         public override nint RowsInSection(UITableView tableView, nint section)
         {
@@ -47,8 +64,7 @@ namespace Songwriter3
         }
         public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
         {
-            AudioPlayer player = new AudioPlayer();
-            player.PlaySound(_section.Recordings[indexPath.Row].FilePath);
+            _audioPlayer.PlaySound(_section.Recordings[indexPath.Row].FilePath);
         }
     }
 }

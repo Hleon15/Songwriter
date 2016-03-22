@@ -21,7 +21,7 @@ namespace Songwriter3.Classes
         private string _audioFileName;
 
 
-        private void initAudioSession()
+        private void activateAudioSession()
         {
             var audioSession = AVAudioSession.SharedInstance();
             var err = audioSession.SetCategory(AVAudioSessionCategory.PlayAndRecord);
@@ -39,15 +39,20 @@ namespace Songwriter3.Classes
 
             _audioSessionCreated =  true;
         }
-        private void deactivateAudioSession()
+        public void DeactivateAudioSession()
         {
             var session = AVAudioSession.SharedInstance();
             session.SetActive(false);
         }
+        public void ReactivateAudioSession()
+        {
+            var session = AVAudioSession.SharedInstance();
+            session.SetActive(true);
+        }
         public AudioRecorder(string songName)
         {
             _songName = songName;
-            initAudioSession();
+            activateAudioSession();
             prepareToRecord();
         }
         private void prepareToRecord()
@@ -107,8 +112,6 @@ namespace Songwriter3.Classes
             r.CreationTime = DateTime.Now;
             r.FileName = _audioFileName;
             r.FilePath = _audioFilePath;
-
-            deactivateAudioSession();
             return r;
         }
 
