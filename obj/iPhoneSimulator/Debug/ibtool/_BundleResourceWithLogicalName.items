@@ -21,6 +21,10 @@
       <LogicalName>Main.storyboardc/1050-view-1051.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\Main.storyboardc\1128-view-1129.nib">
+      <LogicalName>Main.storyboardc/1128-view-1129.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\Main.storyboardc\178-view-179.nib">
       <LogicalName>Main.storyboardc/178-view-179.nib</LogicalName>
       <Optimize>false</Optimize>

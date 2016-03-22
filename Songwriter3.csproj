@@ -95,8 +95,20 @@
     <Compile Include="Classes\AudioPlayer.cs" />
     <Compile Include="Classes\AudioRecorder.cs" />
     <Compile Include="Classes\Recording.cs" />
+    <Compile Include="IdeasNavigationController.cs" />
+    <Compile Include="IdeasNavigationController.designer.cs">
+      <DependentUpon>IdeasNavigationController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="MainTabBarController.cs" />
+    <Compile Include="MainTabBarController.designer.cs">
+      <DependentUpon>MainTabBarController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuickActionViewControllerPlaceHolder.cs" />
+    <Compile Include="QuickActionViewControllerPlaceHolder.designer.cs">
+      <DependentUpon>QuickActionViewControllerPlaceHolder.cs</DependentUpon>
+    </Compile>
     <Compile Include="RecordingCustomCell.cs" />
     <Compile Include="RecordingCustomCell.designer.cs">
       <DependentUpon>RecordingCustomCell.cs</DependentUpon>
@@ -108,6 +120,10 @@
     <Compile Include="RecordingViewController.cs" />
     <Compile Include="RecordingViewController.designer.cs">
       <DependentUpon>RecordingViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SongsNavigationController.cs" />
+    <Compile Include="SongsNavigationController.designer.cs">
+      <DependentUpon>SongsNavigationController.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewController.cs" />
     <Compile Include="ViewController.designer.cs">
@@ -146,6 +162,33 @@
     </Compile>
     <Compile Include="_AllNotes_.cs" />
     <Compile Include="AllNotes_IndividualNote.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Notebook%401x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Notebook%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Notebook%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\lightbulb%401x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\lightbulb%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\lightbulb%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flash-on%401x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flash-on%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flash-on%403x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
