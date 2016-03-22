@@ -482,5 +482,6 @@
         <image name="Notebook.png" width="26" height="33"/>
         <image name="lightbulb.png" width="26" height="36"/>
         <image name="flash-on.png" width="25" height="50"/>
+        <image name="flash-on copy.png" width="20" height="45"/>
     </resources>
 </document>
