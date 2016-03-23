@@ -37,7 +37,8 @@ namespace Songwriter3
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-
+			TabBar.ClipsToBounds = true;
+			Console.WriteLine(TabBar.Frame.Width);
             TabBar.Items[0].ImageInsets = new UIEdgeInsets(7, 0, -7, 0);
             UIImage noteBookImage = UIImage.FromBundle("Notebook.png").ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
             TabBar.Items[0].Image = noteBookImage;
@@ -46,7 +47,7 @@ namespace Songwriter3
             UIImage flashOnImage = UIImage.FromBundle("flash-on.png").ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
             TabBar.Items[1].Image = flashOnImage;
 
-            TabBar.Items[2].ImageInsets = new UIEdgeInsets(7, 0, -7, 0);
+            TabBar.Items[2].ImageInsets = new UIEdgeInsets(5, 0, -5, 0);
             UIImage lightImage = UIImage.FromBundle("lightbulb.png").ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
             TabBar.Items[2].Image = lightImage;
            

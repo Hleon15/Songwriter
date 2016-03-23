@@ -9,6 +9,8 @@
     <RootNamespace>Songwriter3</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>Songwriter3</AssemblyName>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -165,6 +167,9 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Notebook%401x.png" />
+    <BundleResource Include="Resources\flash-on%401x.png" />
+    <BundleResource Include="Resources\flash-on%402x.png" />
+    <BundleResource Include="Resources\flash-on%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Notebook%402x.png" />
@@ -180,15 +185,6 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\lightbulb%403x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\flash-on%401x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\flash-on%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\flash-on%403x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
