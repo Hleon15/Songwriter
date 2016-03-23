@@ -43,13 +43,21 @@ namespace Songwriter3
             UIImage noteBookImage = UIImage.FromBundle("Notebook.png").ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
             TabBar.Items[0].Image = noteBookImage;
 
-            TabBar.Items[1].ImageInsets = new UIEdgeInsets(7, 0, -7, 0);
-            UIImage flashOnImage = UIImage.FromBundle("flash-on.png").ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
-            TabBar.Items[1].Image = flashOnImage;
-
-            TabBar.Items[2].ImageInsets = new UIEdgeInsets(5, 0, -5, 0);
+            TabBar.Items[1].ImageInsets = new UIEdgeInsets(5, 0, -5, 0);
             UIImage lightImage = UIImage.FromBundle("lightbulb.png").ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
-            TabBar.Items[2].Image = lightImage;
+            TabBar.Items[1].Image = lightImage;
+
+            TabBar.Items[2].ImageInsets = new UIEdgeInsets(7, 0, -7, 0);
+            UIImage flashOnImage = UIImage.FromBundle("flash-on.png").ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
+            TabBar.Items[2].Image = flashOnImage;
+
+            TabBar.Items[3].ImageInsets = new UIEdgeInsets(7, 0, -7, 0);
+            UIImage dictImage = UIImage.FromBundle("icon_book.png").ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
+            TabBar.Items[3].Image = dictImage;
+
+            TabBar.Items[4].ImageInsets = new UIEdgeInsets(7, 0, -7, 0);
+            UIImage settingImage = UIImage.FromBundle("Settings.png").ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
+            TabBar.Items[4].Image = settingImage;
            
         }
     }
