@@ -28,6 +28,7 @@
     <MtouchDebug>true</MtouchDebug>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchFastDev>true</MtouchFastDev>
+    <MtouchProfiling>true</MtouchProfiling>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>full</DebugType>
@@ -79,6 +80,12 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="Xamarin.Insights">
+      <HintPath>packages\Xamarin.Insights.1.12.3\lib\Xamarin.iOS10\Xamarin.Insights.dll</HintPath>
+    </Reference>
+    <Reference Include="PLCrashReporterUnifiedBinding">
+      <HintPath>packages\Xamarin.Insights.1.12.3\lib\Xamarin.iOS10\PLCrashReporterUnifiedBinding.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
@@ -92,6 +99,7 @@
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\AudioPlayer.cs" />
@@ -170,6 +178,12 @@
     <BundleResource Include="Resources\flash-on%401x.png" />
     <BundleResource Include="Resources\flash-on%402x.png" />
     <BundleResource Include="Resources\flash-on%403x.png" />
+    <BundleResource Include="Resources\icon_book%401x.png" />
+    <BundleResource Include="Resources\icon_book%402x.png" />
+    <BundleResource Include="Resources\icon_book%403x.png" />
+    <BundleResource Include="Resources\Settings%401x.png" />
+    <BundleResource Include="Resources\Settings%402x.png" />
+    <BundleResource Include="Resources\Settings%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Notebook%402x.png" />
@@ -187,4 +201,5 @@
     <BundleResource Include="Resources\lightbulb%403x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="packages\Xamarin.Insights.1.12.3\build\Xamarin.iOS10\Xamarin.Insights.targets" Condition="Exists('packages\Xamarin.Insights.1.12.3\build\Xamarin.iOS10\Xamarin.Insights.targets')" />
 </Project>

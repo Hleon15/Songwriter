@@ -2,6 +2,8 @@ using Foundation;
 using System;
 using System.CodeDom.Compiler;
 using UIKit;
+using Xamarin;
+using System.Collections.Generic;
 
 namespace Songwriter3
 {
@@ -32,6 +34,12 @@ namespace Songwriter3
 					var cancelAction = UIAlertAction.Create ("Cancel", UIAlertActionStyle.Default, alertAction => Console.WriteLine ("Cancel was Pressed"));
 					var okayAction = UIAlertAction.Create ("Add", UIAlertActionStyle.Cancel, alertAction => 
 						{
+                            Insights.Track ("CreatedSong", new Dictionary<string, string>{
+                            {"Song Name", textInputAlertController.TextFields[0].Text.ToString()},
+
+                            });
+
+
 							AllSongs_IndividualSong song = new AllSongs_IndividualSong(textInputAlertController.TextFields[0].Text.ToString());
 							allSongs.AddSongToList(song);
 							TableView.ReloadData();
