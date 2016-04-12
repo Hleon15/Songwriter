@@ -9,8 +9,8 @@ namespace Songwriter3
 {
 	partial class AllSongsPageTVC : UITableViewController
 	{
-		//FIELDS
-		private _AllSongs_ allSongs = new _AllSongs_();
+        //FIELDS
+        private _AllSongs_ allSongs = new _AllSongs_();
 		//PROPERTIES
 		//CONSTRUCTOR
 		public AllSongsPageTVC (IntPtr handle) : base (handle)
@@ -34,12 +34,6 @@ namespace Songwriter3
 					var cancelAction = UIAlertAction.Create ("Cancel", UIAlertActionStyle.Default, alertAction => Console.WriteLine ("Cancel was Pressed"));
 					var okayAction = UIAlertAction.Create ("Add", UIAlertActionStyle.Cancel, alertAction => 
 						{
-                            Insights.Track ("CreatedSong", new Dictionary<string, string>{
-                            {"Song Name", textInputAlertController.TextFields[0].Text.ToString()},
-
-                            });
-
-
 							AllSongs_IndividualSong song = new AllSongs_IndividualSong(textInputAlertController.TextFields[0].Text.ToString());
 							allSongs.AddSongToList(song);
 							TableView.ReloadData();
